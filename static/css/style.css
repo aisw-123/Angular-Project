@@ -1,0 +1,207 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0; 
+}
+
+footer {
+  background-color: #000033;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 1px;
+  margin-top: auto;
+  width: 100%;
+}
+
+.header { 
+  width:100%;
+  text-align: left;
+  background: rgb(223, 222, 222);
+  color: rgb(43, 43, 43);
+  font-family : Arial;
+  font-size: 25px; 
+
+}
+
+.header p {
+  font : 'Helvatica';
+  padding-left: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  bottom: 0; 
+  left: 10px;
+  margin: 0;
+}
+
+
+.searchbar {
+  margin-top: 20px; 
+  width: 40%;
+  border: 2px solid #ccc;
+  padding: 5px;
+  margin-left: 450px;
+  border-radius: 15px;
+}
+
+#search {
+  display: inline-block;
+  width: 90%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding-left: 40px;
+  padding-top: 3px;
+  text-align: left;
+  height: 30 px;
+}
+
+.searchbar:focus-within {
+  border-color: orange;
+}
+
+#glass{
+  position: absolute;
+  left: 458px;
+  top : 67px;
+  width: 25px; 
+  height: 25px; 
+  opacity: 0.5;
+}
+
+#X{
+  position: absolute;
+  right: 470px;
+  top :73px;
+  width: 15px; 
+  height: 15px;
+  opacity: 0.5;
+
+}
+#glass:hover {
+  opacity: 1;
+}
+#X:hover {
+  opacity: 1;
+}
+
+
+#result{
+  width: 80%;
+  align-content: center;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-top: 0px; 
+  margin-left: 150px;
+}
+::-webkit-scrollbar {  
+  width : 5px;     
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;   
+  background-color: #bab9b9; 
+}
+
+.card{
+  background-color: #205375;
+  margin-top: 100px;
+  width: 200px;
+  height: 270px; 
+  margin-right: 20px;
+  padding: 7px; 
+  flex-shrink: 0;
+
+}
+
+.card:hover{
+  background-color: #112B3C;
+}
+.card img {
+  width: 190px;  
+  height: 190px; 
+  border-radius: 50%; 
+  border: 5px solid white; 
+  object-fit: cover; 
+  margin: 10px auto; 
+  display: block; 
+  margin-bottom: 20px;
+}
+
+.card p {
+  color: white;
+  font-size: 20px;
+  text-align: center;      
+  word-wrap: break-word;    
+  max-height: 120px;        
+  padding: 0 10px;         
+}
+
+#Gif {
+  position: fixed;       
+  top: 15%;             
+  left: 47%;             
+}
+
+#Gif img {
+  width: 50px;   
+  height: 50px;   
+}
+
+#secondGif{
+  position: fixed;       
+  top: 73%;             
+  left: 50%;
+}
+
+#secondGif img {
+  width: 50px;   
+  height: 50px;   
+}
+
+#validation {
+  display: none; 
+}
+
+.no-results {
+  display: block;
+  margin-top: 50px;
+  top : 50%;
+  height: 20px;
+  background-color: rgb(203, 199, 199);
+  color: black;
+  padding: 20px;
+  text-align: center;
+  width: 580px;
+  border-radius: 25px;
+  margin-left: 450px;
+}
+
+#artist_details {
+  width: 60%;  
+  margin: 0 auto; 
+  text-align: center;
+  padding: 20px;
+}
+
+#nationality{
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+#Name {
+  margin-bottom: 0px;
+}
+
+#biography {
+  margin-top: 0px;
+  text-align: justify;
+  line-height: 0.9;
+}
+
+.card.active {
+  background-color: #112B3C; 
+}
